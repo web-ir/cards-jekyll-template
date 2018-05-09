@@ -2,8 +2,7 @@
 layout: post
 title: "Welcome to Jekyll"
 date: 2016-05-08 20:34:26
-icon: '../assets/img/icon-beat-em-up.jpg'
-image: '../assets/img/beat-em-up.jpg'
+image: 'assets/img/beat-em-up.jpg'
 description: 'Put your description here.'
 main-class: ''
 color: '#B31917'
