@@ -1,17 +1,15 @@
 # Site settings
-title: Willian Justen - Desenvolvedor Front End
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "/cards-jekyll-template" # the subpath of your site, e.g. /blog
-url: "https://willianjusten.com.br" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title: Demos
+description: Demos powered by web-ir technology
 
 # User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-disqus_username: lorem_ipsum
+# username: web-ir
+# user_description: Demos powered by web-ir technology
+# email: shuang@mujigame.com
+# twitter_username: lorem_ipsum
+# github_username:  lorem_ipsum
+# gplus_username:  lorem_ipsum
+# disqus_username: lorem_ipsum
 
 # Build settings
 markdown: kramdown
@@ -29,13 +27,13 @@ compress_html:
 # Links to include in menu navigation
 # For external links add external: true
 links:
-  - title: Home
+  - title: home
     url: /
-  - title: Series
-    url: /series
-  - title: Tags
-    url: /tags
-  - title: About Me
+  # - title: Series
+  #   url: /series
+  # - title: Tags
+  #   url: /tags
+  - title: web-ir
     url: /about
 
 # exclude my node related stuff
