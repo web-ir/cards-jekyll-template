@@ -5,8 +5,8 @@
 </header>
 {% include menu-search.html %}
 
-<header class="header-post" role="banner" style="background-image:url({{ page.image }})">
-     <div class="content">
+<header class="header-post" role="banner">
+     <div class="content" style="background-image:url({{ page.image }})">
         {% if page.date %}
             <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}" class="date">{{ page.date | date_to_string }}</time>
         {% endif %}
