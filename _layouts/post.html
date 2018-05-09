@@ -4,17 +4,18 @@
     <body>
         {% include svg-icons.html %}
         {% include header-post.html %}
-        <section class="post">
 
+        <section class="post">
             <article role="article" id="post" class="post-content" itemprop="articleBody">
                 {{ content }}
             </article>
+            <div class="tags">
+                {% for tag in page.tags %}
+                    <a href="{{site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                {% endfor %}
+            </div>
 
             {% include share.html %}
-            {% include author.html %}
-            {% if page.comments != false %} 
-                {% include comments.html %}
-            {% endif %}
             {% include footer.html %}
         </section>
     </body>

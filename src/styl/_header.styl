@@ -3,7 +3,6 @@ body
 	height 100%
 
 $bg
-	background-color main
 	.content
 		width 95%
 		text-align center
@@ -25,14 +24,16 @@ $bg
 		font-size rem(28px)
 		&:after
 			transition all .4s
-			content '</> AD'
+			content 'web-ir'
 			+above(cut)
-				content '</> Anon Developer'
+				content 'powered by web-ir'
 
 // Header Post
 .header-post
 	@extends $bg
-	min-height rem(500px)
+	min-height rem(260px)
+		+above(cut)
+			min-height rem(500px)
 	position fixed
 	width 100%
 	.content
@@ -47,10 +48,6 @@ $bg
 			padding 0 10px
 			+above(cut)
 				padding 0 10px
-
-	.date
-		mainFont(300)
-		font-size rem(16px)
 	h1
 		font-size rem(30px)
 		margin 0 0 30px    
@@ -68,3 +65,13 @@ $bg
 		text-decoration none
 		mainFont(300)
 		font-size rem(18px)
+        .background
+		position fixed
+		width 100%
+		height 260px
+		+above(cut)
+			height 500px
+		display flex
+		overflow hidden
+		justify-content center
+		z-index -1

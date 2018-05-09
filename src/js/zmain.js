@@ -60,17 +60,17 @@
 
 function scrollBanner() {
   var scrollPos;
+  var headerBack = document.querySelector('.header-post .background')
   var headerText = document.querySelector('.header-post .content')
   scrollPos = window.scrollY;
 
-  if (scrollPos <= 500 && headerText != null) {
+  if (scrollPos <= 500 && headerBack != null && headerText != null) {
+      headerBack.style.transform =  "translateY(" + (-scrollPos/2) +"px" + ")";
       headerText.style.transform =  "translateY(" + (-scrollPos/3) +"px" + ")";
       headerText.style.opacity = 1-(scrollPos/500);
   }
 }
 
-if (screen.width > 1024) {
-  window.addEventListener('scroll', scrollBanner);
-}
+window.addEventListener('scroll', scrollBanner);
 
 })( Zepto, window );
